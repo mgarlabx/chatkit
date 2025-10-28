@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatKit App</title>
+    <script src="https://cdn.platform.openai.com/deployments/chatkit/chatkit.js"></script>
+    <style>
+        .h-chat {
+            height: 600px;
+        }
+        .w-chat {
+            width: 800px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <h1>ChatKit App</h1>
+        <div id="chat-container"></div>
+    </div>
+
+    <script>
+        const api = {
+            async getClientSecret(existing) {
+                const res = await fetch('http://0.0.0.0:8000/api/chatkit/session', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                });
+                const { client_secret } = await res.json();
+                return client_secret;
+            },
+        };
+
+        const theme = {
+            colorScheme: 'light',
+        };
+
+        const composer = {
+            placeholder: 'Faça a sua questão...',
+        };
+
+        const startScreen = {
+            greeting: 'Exemplos de perguntas para você começar:',
+            prompts: [
+                {
+                    icon: 'circle-question',
+                    label: 'Qual é a capital da França?',
+                    prompt: 'Qual é a capital da França?'
+                },
+                {
+                    icon: 'circle-question',
+                    label: 'Onde fica o museu do Louvre?',
+                    prompt: 'Onde fica o museu do Louvre?'
+                },
+            ],
+        };
+
+        const options = {
+            locale: 'pt-BR',
+            api: api,
+            theme: theme,
+            composer: composer,
+            startScreen: startScreen,
+        };
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const container = document.getElementById('chat-container');
+            const chatkit = document.createElement('openai-chatkit');
+            chatkit.setOptions(options);
+            chatkit.classList.add('h-chat', 'w-chat');
+            container.appendChild(chatkit);
+        });
+
+    </script>
+</body>
+
+</html>
