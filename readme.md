@@ -49,29 +49,30 @@ O cliente está no aquivo `index.html`.
 # Saiba mais
 
 ### Agent builder
-- Nocode interface
+- Nocode interface   
 [https://platform.openai.com/agent-builder](https://platform.openai.com/agent-builder)
 
 ### Chatkit
-- Tutorial Chatkit
+- Tutorial Chatkit   
   [https://platform.openai.com/docs/guides/chatkit](https://platform.openai.com/docs/guides/chatkit)
 
 ### Backend
-- Referência API Chatkit
+- Referência API Chatkit   
   [https://platform.openai.com/docs/api-reference/chatkit/sessions/create](https://platform.openai.com/docs/api-reference/chatkit/sessions/create)
 
 ### Frontend
-- Github chatkit-js
-  [https://github.com/openai/chatkit-js](https://github.com/openai/chatkit-js)
-- Theming
-  [https://platform.openai.com/docs/guides/chatkit-themes](https://platform.openai.com/docs/guides/chatkit-themes)
-  [https://openai.github.io/chatkit-js/guides/theming-customization/](https://openai.github.io/chatkit-js/guides/theming-customization/)
-  [https://openai.github.io/chatkit-js/api/openai/chatkit/type-aliases/themeoption/](https://openai.github.io/chatkit-js/api/openai/chatkit/type-aliases/themeoption/)
-- Icons
-[https://openai.github.io/chatkit-js/api/openai/chatkit/type-aliases/chatkiticon/](https://openai.github.io/chatkit-js/api/openai/chatkit/type-aliases/chatkiticon/)
-- Chatkit Studio
-  [https://chatkit.studio](https://chatkit.studio)
-- Chatkit Starter App (Next.js)
-  [https://github.com/openai/openai-chatkit-starter-app](https://github.com/openai/openai-chatkit-starter-app)
+- Github chatkit-js   
+  [https://github.com/openai/chatkit-js](https://github.com/openai/chatkit-js)   
+- Theming   
+  [https://platform.openai.com/docs/guides/chatkit-themes](https://platform.openai.com/docs/guides/chatkit-themes)   
+  [https://openai.github.io/chatkit-js/guides/theming-customization/](https://openai.github.io/chatkit-js/guides/theming-customization/)   
+  [https://openai.github.io/chatkit-js/api/openai/chatkit/type-aliases/themeoption/](https://openai.github.io/chatkit-js/api/openai/chatkit/type-aliases/themeoption/)   
+- Icons   
+[https://openai.github.io/chatkit-js/api/openai/chatkit/type-aliases/chatkiticon/](https://openai.github.io/chatkit-js/api/openai/chatkit/type-aliases/chatkiticon/)   
+- Chatkit Studio   
+  [https://chatkit.studio](https://chatkit.studio)   
+- Chatkit Starter App (Next.js)   
+  [https://github.com/openai/openai-chatkit-starter-app](https://github.com/openai/openai-chatkit-starter-app)   
+     
 
 .
