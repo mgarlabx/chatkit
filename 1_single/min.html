@@ -1,0 +1,16 @@
+<!-- 
+Exemplo simples de integração do ChatKit em uma página HTML.
+-->
+
+<div id='chat-container'></div>
+
+<script src='https://cdn.platform.openai.com/deployments/chatkit/chatkit.js'></script>
+
+<script>
+    const options = {
+        api: {getClientSecret: () => '<CLIENT_SECRET>'},
+    };
+    const chatkit = document.createElement('openai-chatkit');
+    chatkit.setOptions(options);
+	document.getElementById('chat-container').appendChild(chatkit);
+</script>

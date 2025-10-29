@@ -15,11 +15,17 @@ O primeiro passo é criar um workflow usando o "Agent Builder". O processo usa u
 
 Esse é um cenário minimalista, capaz de criar um chatbot com apenas um arquivo. Nesse cenário é utilizado um arquivo `index.php`, sendo que parte inicial do arquivo é feita a chamada `request` para o endpoint `https://api.openai.com/v1/chatkit/sessions` com o objetivo de gerar uma `client_secret` que será utilizada no frontend. 
 
-No exemplo apresentado, notar que há um único elemento HTML: `<div id='chat-container'></div>`. É nele que irá rodar o chatbot. 
+No exemplo apresentado, notar que há um único elemento HTML: 
+
+```html
+<div id='chat-container'></div>
+```
+
+É aqui que irá rodar o chatbot. 
 
 Para instalar, deve-se passar as credenciais através de um arquivo `config.php` com a seguinte estrutura:
 
-```
+```php
 <?php
 $OPENAI_API_KEY = "sk-proj-...";
 $CHATKIT_WORKFLOW_ID = "wf_...";
